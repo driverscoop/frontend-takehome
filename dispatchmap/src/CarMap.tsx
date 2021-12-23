@@ -11,7 +11,11 @@ const CarMap = () => {
 
   return (
     <LoadScript googleMapsApiKey="NEED_KEY_HERE">
-      <GoogleMap mapContainerStyle={containerStyle}>
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={{ lat: 0, lng: 0 }}
+        zoom={12}
+      >
         {/* For documentation on the MapView see https://react-google-maps-api-docs.netlify.app/ */}
       </GoogleMap>
     </LoadScript>
